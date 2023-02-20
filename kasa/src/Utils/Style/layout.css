@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+*{ 
+  font-family: "Monstserrat";
+  color: #FF6060;
+}
+
+.policePrimary{
+font-style: normal;
+font-weight: 500;
+}
+
 main {
     flex: 1 0 auto;
     margin: auto 10%;

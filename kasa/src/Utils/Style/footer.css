@@ -5,19 +5,22 @@ footer {
     position: relative;
   }
   
-  #box-footer {
+  #boxFooter  {
     display: flex;
     flex-direction: column;
     height: 150px;
     padding: 25px 0px;
+    margin-top: 5%;
   }
   
-  #box-footer > img {
+  #boxFooter  > img {
     display: block;
     margin: auto;
   }
   
-  #box-footer > p {
+  #boxFooter > p {
     color: #ffffff;
     text-align: center;
+    font-weight: 500;
+    font-size: 24px;
   }
