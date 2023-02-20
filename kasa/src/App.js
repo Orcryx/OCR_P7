@@ -1,12 +1,9 @@
-// import logo from './logo.svg';
-import './Utils/Style/App.css';
+// import './Utils/Style/App.css';
+import Routeur from '../src/Route/routeur'
 
 function App() {
   return (
-    <div className="App">
-      <h1> *-* KASA *-* </h1>
-    </div>
+    <Routeur /> 
   );
 }
-
 export default App;
