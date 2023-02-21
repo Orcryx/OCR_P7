@@ -19,7 +19,7 @@ function Accueil(){
     <div id="home">
         <HeroBanner image={image} title={slogan}/>
         <section className="thumbnails">
-        {Lodging.map((logement) => <NavLink key={logement.id} to={"/logement/"+logement.id}><Card key={logement.id} id={logement.id} image={logement.cover} titre={logement.title} /></NavLink>)}
+        {Lodging.map((logement) => <NavLink key={logement.id} to={"/logement/"+logement.id}><Card key={logement.id} id={logement.id} image={logement.cover} title={logement.title} /></NavLink>)}
         </section>
     </div>
    

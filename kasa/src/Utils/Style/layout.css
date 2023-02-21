@@ -9,6 +9,10 @@ font-style: normal;
 font-weight: 500;
 }
 
+.white{
+  color: #FFFFFF;
+}
+
 main {
 
     margin: auto 10%;

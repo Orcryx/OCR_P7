@@ -1,9 +1,9 @@
 .card{
     width: 340px;
     height: 340px;
+    position: relative;
     overflow: hidden;
     margin-bottom: 15%;
-    /* border : 1px crimson solid; */
     border-radius: 3%;
     background:linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%) ;
 }
@@ -14,4 +14,23 @@
     object-fit: cover;
     border-radius: inherit;
  
+}
+
+.cardTitle{
+    position : absolute;
+    bottom: 0px;
+    left: 15px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.cardTitle::after{
+    content: " ";
+    width: 340px;
+    height:  150px;
+    left : -15px;
+    bottom: -15px;
+    /* border : 1px orange solid; */
+    position : absolute;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.5)) ;
 }
