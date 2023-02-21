@@ -1,5 +1,17 @@
-#home
+/* #home
 {
-    background-color: aquamarine;
-    border : 5px yellowgreen solid;
+    
+} */
+
+.thumbnails{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 40px 0 40px 0;
+    background-color: #F6F6F6;
+    border-radius: 1%;
+    border : 1px #F6F6F6 solid;
+ 
 }
