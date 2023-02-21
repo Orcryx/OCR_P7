@@ -7,7 +7,8 @@ import HeroBanner from "../../Components/Hero/hero"
 //importer les données du site
 import Lodging from "../../Assets/Mock/logements.json"
 import Script from "../../Assets/Mock/script"
- 
+ //importer le style
+import '../../Utils/Style/accueil.css'
 import image from "../../Assets/Img/banner.png"
 
 
