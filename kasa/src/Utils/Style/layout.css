@@ -13,6 +13,11 @@ font-weight: 500;
   color: #FFFFFF;
 }
 
+.backgroundPrimary{
+  background-color: #FF6060;
+}
+
+
 main {
 
     margin: auto 10%;

@@ -7,12 +7,13 @@ import Collapse from "../../Components/Collapse/collapse";
 import Script from "../../Assets/Mock/script";
 //Importer le style
 import image from "../../Assets/Img/aboutBannerDesktop.png";
+import '../../Utils/Style/apropos.css'
 
 
 function APropos() {
 
     return (
-        <div id="error-page">
+        <div id="aboutPage">
           <HeroBanner image={image} title=" "/>
           <section className="accordion">  
             {Script.map((criteria) => <Collapse key={criteria.id} title={criteria.label} description={criteria.content}/>)}
