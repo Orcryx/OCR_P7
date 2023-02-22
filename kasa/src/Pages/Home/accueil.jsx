@@ -6,20 +6,17 @@ import Card from "../../Components/Card/card"
 import HeroBanner from "../../Components/Hero/hero"
 //importer les données du site
 import Lodging from "../../Assets/Mock/logements.json"
-import Script from "../../Assets/Mock/script"
  //importer le style
 import '../../Utils/Style/accueil.css'
 import image from "../../Assets/Img/banner.png"
 
 
 function Accueil(){
-    const slogan = Script.slogan;
-
  return(
     <div id="home">
-        <HeroBanner image={image} title={slogan}/>
+        <HeroBanner image={image} title="Chez vous, partout et ailleurs"/>
         <section className="thumbnails">
-        {Lodging.map((logement) => <NavLink key={logement.id} to={"/logement/"+logement.id}><Card key={logement.id} id={logement.id} image={logement.cover} title={logement.title} /></NavLink>)}
+            {Lodging.map((logement) => <NavLink key={logement.id} to={"/logement/"+logement.id}><Card key={logement.id} id={logement.id} image={logement.cover} title={logement.title} /></NavLink>)}
         </section>
     </div>
    
