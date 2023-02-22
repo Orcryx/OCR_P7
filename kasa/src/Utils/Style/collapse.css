@@ -1,11 +1,12 @@
 .accordionItem{
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     list-style-type: none;  
 }
 
 .accordionToggle{
-    height: 35px;
     position: relative;
+    height: 35px;
+    border-radius: 3px;
 } 
 
 .accordionTitle{
@@ -17,6 +18,7 @@
     position: absolute;
     right : 15px;
     top: 5px;
+    margin-left: 20px;
 }
 
 .accordionContent{

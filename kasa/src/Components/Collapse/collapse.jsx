@@ -15,7 +15,7 @@ function Collapse ({title, description}){
                     {isOpen ? <img src={arrow} alt="Ouvrir cette liste" className="accordionArrow Up"/> :  <img src={arrow} alt="Ouvrir cette liste" className="accordionArrow Down"/>}
                 </span>
             </div>
-            {isOpen && <div className="accordionContent">{description}</div>}
+            {isOpen && <div className="accordionContent backgroundSecondary">{description}</div>}
         </li>
     );
 }
