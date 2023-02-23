@@ -15,7 +15,7 @@ function Routeur () {
              <Layout>
                 <Routes>
                     <Route path="/" element={<Accueil />}/>
-                    <Route path="/logement/:id" element={<Fiche />}/>
+                    <Route path="/logement/:lodgingId" element={<Fiche />}/>
                     <Route path="/a-propos" element={<APropos />}/>
                     <Route path="*" element={<PageError404 />}/>
                 </Routes> 

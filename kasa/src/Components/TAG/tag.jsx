@@ -3,10 +3,10 @@ import React from "react";
 //Importer le style
 import '../../Utils/Style/tag.css'
 
-function TAG({tags}){
+function TAG({getTag}){
 
     return (
-        <span className="tagSpan">{tags}</span>
+        <span className="tagSpan">{getTag}</span>
     );
 }
 export default TAG;

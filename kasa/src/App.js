@@ -1,4 +1,4 @@
-// import './Utils/Style/App.css';
+import './Utils/Style/App.css';
 import Routeur from '../src/Route/routeur'
 
 function App() {
