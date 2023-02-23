@@ -1,0 +1,34 @@
+
+.oneLodging{
+    border: 1px salmon solid;
+    height: auto;  
+}
+
+.infoLodging{
+    position : relative;
+    border: 1px goldenrod solid;
+}
+
+.infoOwerLodging{
+    position : absolute;
+    top : 0px;
+    right: 0px;
+    border: 1px cornflowerblue solid;
+}
+.tagLodging{
+    /* position : absolute; */
+    margin-bottom: 1%;
+    border: 1px green solid;
+}
+
+
+
+.collapseLodging{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* flex: 1;
+    gap: 3%; */
+    border: 1px indigo solid;
+}

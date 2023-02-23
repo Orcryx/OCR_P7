@@ -6,7 +6,7 @@ import './tag.css'
 function TAG({getTag}){
 
     return (
-        <span className="tagSpan">{getTag}</span>
+        <span className="tagSpan backgroundPrimary white">{getTag}</span>
     );
 }
 export default TAG;

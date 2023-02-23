@@ -5,6 +5,7 @@
 
 .accordionToggle{
     position: relative;
+    min-width: 50%;
     height: 35px;
     border-radius: 3px;
 } 
@@ -23,6 +24,7 @@
 
 .accordionContent{
     padding: 10px;
+    min-height: 80px;
     border-radius: 3px;
 }
 

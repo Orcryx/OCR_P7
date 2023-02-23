@@ -10,6 +10,7 @@ import TAG from "../../Components/TAG/tag";
 import Ower from "../../Components/Ower/ower";
 import Rate from "../../Components/Rating/rating";
 //importer le style
+import "../../Utils/Style/fiche.css";
 
 function Fiche(){
 
@@ -20,16 +21,17 @@ function Fiche(){
 
     return (
        <div className="oneLodging">
-          {/* <slider></slider> */}
-          <div className="infoLodgin">
+          {/* <SlideShow /> */}
+          <p>*-* Mon Carrouselle d'images *-*</p>
+          <div className="infoLodging">
                <h1 className="titleLodging">{title}</h1>
                <p className="localisationLodging">{location}</p>
-               <div className="tagLodging">
-                    {lodging.tags.map((tag, index) => (<TAG key={index} getTag={tag} />))}
-               </div>
                <div className="infoOwerLodging">
                     <Ower host={host}/>
                     <Rate rates={rating}/>
+               </div>
+               <div className="tagLodging">
+                    {lodging.tags.map((tag, index) => (<TAG key={index} getTag={tag} />))}
                </div>
                <div className="collapseLodging">
                     <Collapse title="Description" description={description} />
