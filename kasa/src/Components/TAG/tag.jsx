@@ -1,7 +1,7 @@
 //Importer les outils react
 import React from "react";
 //Importer le style
-import '../../Utils/Style/tag.css'
+import './tag.css'
 
 function TAG({getTag}){
 

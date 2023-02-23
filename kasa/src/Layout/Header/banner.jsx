@@ -3,7 +3,7 @@ import React from "react";
 //importer les élements du projet 
 import { NavLink } from "react-router-dom";
 //Importer le style
-import '../../Utils/Style/banner.css'
+import './banner.css'
 import logo from "../../Assets/Img/logo.png"
 
 function Banner (){

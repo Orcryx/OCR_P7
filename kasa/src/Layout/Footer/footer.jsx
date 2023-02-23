@@ -2,7 +2,7 @@
 import React from "react";
 //importer les élements du projet 
 //Importer le style
-import '../../Utils/Style/footer.css'
+import './footer.css'
 import logoFooter from "../../Assets/Img/logoFooter.png"
 
 function Footer (){

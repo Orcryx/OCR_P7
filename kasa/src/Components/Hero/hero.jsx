@@ -1,7 +1,7 @@
 //Importer les outils react
 import React from "react";
 //Importer le style
-import '../../Utils/Style/hero.css'
+import './hero.css'
 
 function heroBanner({image, title})
 {

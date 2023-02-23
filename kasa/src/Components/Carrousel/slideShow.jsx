@@ -1,7 +1,7 @@
 //Importer les outils react
 import React, {useState} from "react";
 //Importer le style
-import '../../Utils/Style/slideShow.css';
+import './slideShow.css';
 import arrowLeft from "../../Assets/Img/leftArrow.png";
 import arrowRight from "../../Assets/Img/rightArrow.png";
 

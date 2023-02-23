@@ -4,7 +4,7 @@ import React from "react";
 import Banner from './Header/banner';
 import Footer from './Footer/footer';
 //Importer le style
-import '../Utils/Style/layout.css';
+import './layout.css';
 
 function Layout({children}) {
     return(

@@ -1,31 +1,41 @@
 //importer les éléments réact
 //import React from "react";
 import {useParams} from "react-router-dom";
-//Importer les éléments du projet
+//Importer les données du projet
 import Lodging from "../../Assets/Mock/logements.json";
+//importer les éléments du projet
 // import SlideShow from "../../Components/Carrousel/slideShow";
 import Collapse from "../../Components/Collapse/collapse";
-import TAG from "../../Components/TAG/tag"
+import TAG from "../../Components/TAG/tag";
+import Ower from "../../Components/Ower/ower";
+import Rate from "../../Components/Rating/rating";
+//importer le style
 
 function Fiche(){
 
     const {lodgingId} = useParams();
-    console.log(lodgingId);
     const lodging = Lodging.find(logement=> logement.id === lodgingId);
-    console.log( "les infos du tableau sont :");
-    console.log(lodging);
     const {title, location, rating, host, equipments, description, pictures} = lodging;
-    console.log("le titre est :" + " " + title);
-    console.log( "la liste des tags est :");
-    console.log(lodging.tags);
+
+
     return (
        <div className="oneLodging">
-            <div className="tagLodging">
-            {lodging.tags.map((tag, index) => (<TAG key={index} getTag={tag} />))}
-            </div>
-            <div className="collapsLodging">
-            {lodging.equipments.map((title, description) => (<Collapse title={title} description={description} />))}
-            </div>
+          {/* <slider></slider> */}
+          <div className="infoLodgin">
+               <h1 className="titleLodging">{title}</h1>
+               <p className="localisationLodging">{location}</p>
+               <div className="tagLodging">
+                    {lodging.tags.map((tag, index) => (<TAG key={index} getTag={tag} />))}
+               </div>
+               <div className="infoOwerLodging">
+                    <Ower host={host}/>
+                    <Rate rates={rating}/>
+               </div>
+               <div className="collapseLodging">
+                    <Collapse title="Description" description={description} />
+                    <Collapse title="Équiments" description={equipments} />
+               </div> 
+          </div>
        </div>
       );
 }
