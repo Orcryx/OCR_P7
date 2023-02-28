@@ -1,24 +1,25 @@
 
 .oneLodging{
-    border: 1px salmon solid;
+    /* border: 1px salmon solid; */
+    width: 100%;
     height: auto;  
 }
 
 .infoLodging{
     position : relative;
-    border: 1px goldenrod solid;
+    /* border: 1px goldenrod solid; */
 }
 
 .infoOwerLodging{
     position : absolute;
     top : 0px;
     right: 0px;
-    border: 1px cornflowerblue solid;
+    /* border: 1px cornflowerblue solid; */
 }
 .tagLodging{
     /* position : absolute; */
     margin-bottom: 1%;
-    border: 1px green solid;
+    /* border: 1px green solid; */
 }
 
 
@@ -26,9 +27,9 @@
 .collapseLodging{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap;  a mettre dans @media et choisir le bon breakpoint*/
     justify-content: space-around;
-    /* flex: 1;
-    gap: 3%; */
-    border: 1px indigo solid;
+    flex: 1;
+    gap: 3%;
+    /* border: 1px indigo solid; */
 }

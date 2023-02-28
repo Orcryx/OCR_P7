@@ -9,11 +9,13 @@ function Ower({host}){
 
 
     return(
-       <div className="owerLodging">
-            <p className="owerName">{name}</p>
-            <p className="owerLastname">{lastname}</p>
-            <div className="owerAvatar">
-                <img src={host.picture} alt="avatar" />
+       <div className="owerLodging policePrimary">
+            <div children="identity">
+                <p className="owerName">{name}</p>
+                <p className="owerLastname">{lastname}</p>
+            </div>           
+            <div className="avatarSize owerAvatar ">
+                <img src={host.picture} alt="avatar"  className=" avatarSize imgAvatar "/>
             </div>
        </div> 
     );

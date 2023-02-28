@@ -1,0 +1,21 @@
+
+.owerLodging{
+    width: auto;
+    display: flex;
+    position: relative;
+}
+
+.identity{
+flex-direction: column;
+}
+.avatarSize{
+    width: 64px;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top : 5px;
+}
+.owerAvater{
+    background-color: #C4C4C4;
+}
+

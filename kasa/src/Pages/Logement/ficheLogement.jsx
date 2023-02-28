@@ -4,7 +4,7 @@ import {useParams} from "react-router-dom";
 //Importer les données du projet
 import Lodging from "../../Assets/Mock/logements.json";
 //importer les éléments du projet
-// import SlideShow from "../../Components/Carrousel/slideShow";
+import SlideShow from "../../Components/Carrousel/slideShow";
 import Collapse from "../../Components/Collapse/collapse";
 import TAG from "../../Components/TAG/tag";
 import Ower from "../../Components/Ower/ower";
@@ -21,7 +21,7 @@ function Fiche(){
 
     return (
        <div className="oneLodging">
-          {/* <SlideShow /> */}
+          <SlideShow  images={pictures}/>
           <p>*-* Mon Carrouselle d'images *-*</p>
           <div className="infoLodging">
                <h1 className="titleLodging">{title}</h1>

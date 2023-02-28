@@ -5,8 +5,10 @@ import './slideShow.css';
 import arrowLeft from "../../Assets/Img/leftArrow.png";
 import arrowRight from "../../Assets/Img/rightArrow.png";
 
-function Carrousel ({images}){
 
+
+function Carrousel ({images}){
+  document.addEventListener('keydown', keyPress);
     const [displayImg, setImg] = useState(0);
     const length = images.length;
     
@@ -27,7 +29,7 @@ function Carrousel ({images}){
                 className={
                   index === displayImg
                     ? "slide sliderActive"
-                    : "slide sliderinactive"
+                    : "slide sliderInactive"
                 }
               >
                 {index === displayImg && (
@@ -36,18 +38,28 @@ function Carrousel ({images}){
               </div>
             );
           })}
-          {/* get button if there are more thant one picture */}
+          {/* Afficher les boutons de navigation uniquement si il y a plus d'une image disponible */}
           {length > 1 ? (
             <>
-              <div className="slider__previous" onClick={prevImg}>
-                <img src={arrowLeft} alt="" className="slider__previous-icon" />
+              <div className="sliderPrevious" onClick={prevImg}>
+                <img src={arrowLeft} alt="" className="previousArrow" />
               </div>
-              <div className="slider__next" onClick={nextImg}>
-                <img src={arrowRight} alt="" className="slider__next-icon" />
+              <div className="sliderNext" onClick={nextImg}>
+                <img src={arrowRight} alt="" className="nextArrow" />
               </div>
             </>
           ) : null}
         </div>
       );
+
+      function keyPress(e){
+        if(e.keyCode === 37){
+          prevImg();
+        }
+        else if(e.keyCode === 39){
+          nextImg();
+        }
+      }
+      
 }
 export default Carrousel;
