@@ -24,30 +24,21 @@ function Carrousel ({images}){
         <div className="slider">
           {images.map((picture, index) => {
             return (
-              <div
-                key={index}
-                className={
-                  index === displayImg
-                    ? "slide sliderActive"
-                    : "slide sliderInactive"
-                }
-              >
-                {index === displayImg && (
-                  <img src={picture} alt="" className="sliderPicture" />
-                )}
+              <div key={index} className={index === displayImg ? "slideActive" : "slideInactive"}>
+                {index === displayImg && (<img src={picture} alt="" className="sliderPicture" />)}
               </div>
             );
           })}
           {/* Afficher les boutons de navigation uniquement si il y a plus d'une image disponible */}
           {length > 1 ? (
-            <>
+            <div className="arrowBox">
               <div className="sliderPrevious" onClick={prevImg}>
                 <img src={arrowLeft} alt="" className="previousArrow" />
               </div>
               <div className="sliderNext" onClick={nextImg}>
                 <img src={arrowRight} alt="" className="nextArrow" />
               </div>
-            </>
+            </div>
           ) : null}
         </div>
       );
@@ -59,7 +50,6 @@ function Carrousel ({images}){
         else if(e.keyCode === 39){
           nextImg();
         }
-      }
-      
+      }    
 }
 export default Carrousel;

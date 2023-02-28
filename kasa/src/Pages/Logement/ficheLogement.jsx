@@ -22,7 +22,6 @@ function Fiche(){
     return (
        <div className="oneLodging">
           <SlideShow  images={pictures}/>
-          <p>*-* Mon Carrouselle d'images *-*</p>
           <div className="infoLodging">
                <h1 className="titleLodging">{title}</h1>
                <p className="localisationLodging">{location}</p>
