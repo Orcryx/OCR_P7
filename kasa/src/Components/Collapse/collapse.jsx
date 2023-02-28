@@ -2,7 +2,8 @@
 import React, { useState }  from "react";
 //importer le style
 import './collapse.css'
-import arrow from "../../Assets/Img/arrow24px.png";
+import arrowDown from "../../Assets/Img/arrowDown.png";
+import arrowUp  from "../../Assets/Img/arrowUp.png";
 
 
 function Collapse ({title, description}){
@@ -12,7 +13,7 @@ function Collapse ({title, description}){
             <div className="accordionToggle backgroundPrimary" onClick={()=> setOpen(!isOpen)}>               
                 <span>   
                 <h3 className="accordionTitle white">{title}</h3>
-                    {isOpen ? <img src={arrow} alt="Ouvrir cette liste" className="accordionArrow Up"/> :  <img src={arrow} alt="Ouvrir cette liste" className="accordionArrow Down"/>}
+                    {isOpen ? <img src={arrowUp} alt="Fermer cette liste" className="accordionArrow"/> :  <img src={arrowDown} alt="Ouvrir cette liste" className="accordionArrow"/>}
                 </span>
             </div>
             {isOpen && <div className="accordionContent backgroundSecondary">{description}</div>}

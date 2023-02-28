@@ -33,8 +33,12 @@ function Fiche(){
                     {lodging.tags.map((tag, index) => (<TAG key={index} getTag={tag} />))}
                </div>
                <div className="collapseLodging">
-                    <Collapse title="Description" description={description} />
-                    <Collapse title="Équiments" description={equipments} />
+                    <div  className="box bigBox">
+                     <Collapse title="Description" description={description}/>
+                    </div>
+                    <div className="box smallBox">
+                         <Collapse title="Équiments" description={equipments}/>
+                    </div>
                </div> 
           </div>
        </div>

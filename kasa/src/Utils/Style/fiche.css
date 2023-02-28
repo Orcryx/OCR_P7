@@ -17,8 +17,7 @@
     /* border: 1px cornflowerblue solid; */
 }
 .tagLodging{
-    /* position : absolute; */
-    margin-bottom: 1%;
+    margin: 30px 0 20px 0;
     /* border: 1px green solid; */
 }
 
@@ -26,10 +25,21 @@
 
 .collapseLodging{
     display: flex;
-    flex-direction: row;
-    /* flex-wrap: wrap;  a mettre dans @media et choisir le bon breakpoint*/
-    justify-content: space-around;
-    flex: 1;
+    justify-content: space-between;
     gap: 3%;
     /* border: 1px indigo solid; */
+}
+
+.collapseLodging.box{
+    min-width: 580px;
+}
+
+.bigBox{
+width: 70%;
+
+}
+
+.smallBox{
+width: 30%;
+
 }
