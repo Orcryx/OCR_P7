@@ -1,5 +1,6 @@
 #hero{
     width: 100%;
+    min-width: 360px;
     height: 223px;
     position: relative;
     margin-bottom: 20px;
@@ -9,6 +10,7 @@
 
 .heroImg{
     width: inherit;
+    min-width: 360px;
     height: inherit;
     object-fit: cover;
     background:  linear-gradient(transparent, rgba(0, 0, 0, 0.5));
@@ -17,7 +19,7 @@
 
 .heroTitle{
     position: absolute;
-    width: 100%;
+    width: 50%;
     top : 40%;
     left : 25%;
     right : 25%;
@@ -29,27 +31,19 @@
 }
 
 @media screen and (max-width: 1224px) {
-
-#hero {
-    height: 110px;
-}
-.heroTitle{
-    font-size: 24px;
-}
-  }
-  
-  @media only screen and (max-width: 768px){
     .heroTitle{
-        width: 80%;
-        left : 10%;
-        font-size: 20px;
+        font-size: 24px;
     }
   }
-
+  
   @media only screen and (max-width: 375px){
     .heroTitle{
         left : 0;
         margin: 15px 10px;
         font-size: 18px;
     }
+
+    #hero {
+    height: 110px;
+}
   }
