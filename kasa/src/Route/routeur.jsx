@@ -1,6 +1,6 @@
 //Importer les outils react & reactRouter
 import React from "react";
-import{BrowserRouter, Routes, Route} from "react-router-dom";
+import{BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
 //Importer les éléments du projet
 import Layout from '../Layout/layout';
 import APropos from '../Pages/Apropos/apropos';
@@ -14,7 +14,8 @@ function Routeur () {
         <BrowserRouter>
              <Layout>
                 <Routes>
-                    <Route path="/" element={<Accueil />}/>
+                    <Route element={<Navigate replace to="/accueil" />} path="/" />
+                    <Route path="/accueil" element={<Accueil />}/>
                     <Route path="/logement/:lodgingId" element={<Fiche />}/>
                     <Route path="/a-propos" element={<APropos />}/>
                     <Route path="*" element={<PageError404 />}/>

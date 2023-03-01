@@ -17,7 +17,7 @@ function Fiche(){
     const {lodgingId} = useParams();
     const lodging = Lodging.find(logement=> logement.id === lodgingId);
     const {title, location, rating, host, description, pictures} = lodging;
-    const listEquipement = lodging.equipments.map((equipment, index) =>{return<p key={index}>{equipment}</p>})
+    const listEquipement = lodging.equipments.map((equipment, index) =>{return<p key={index} className="list">{equipment}</p>})
    
     return (
      <>
@@ -45,7 +45,7 @@ function Fiche(){
                               </div> 
                          </div>
                     </div>
-               ) : <Navigate to="404" replace/>
+               ) : <Navigate replace to="/404" />
           }
          
      </>
