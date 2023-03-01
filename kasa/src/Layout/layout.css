@@ -1,9 +1,11 @@
 main {
     margin: auto 10%;
     width: 80%;
+    min-width: 380px;
+    border:1px solid seagreen;
   }
   
-  @media screen and (max-width: 1490px) {
+  @media screen and (max-width: 1224px) {
     main {
       margin: auto 5%;
       width: 90%;
