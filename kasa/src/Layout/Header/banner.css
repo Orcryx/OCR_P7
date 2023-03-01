@@ -1,9 +1,8 @@
 header {
-    align-items: center;
-    display: inline-flex;
-    margin: 40px 0;
-    width: 100%;
-    min-width: 360px;
+  align-items: center;
+  display: inline-flex;
+  margin: 40px 10%;
+  width: 80%;
     border : 1px yellow solid;
   }
   
@@ -33,6 +32,10 @@ header {
   }
   
   @media screen and (max-width: 1224px) {
+    header {
+      margin: 40px 2.5%;
+      width: 95%;
+    }
 
     header > img {
       height: 47px;

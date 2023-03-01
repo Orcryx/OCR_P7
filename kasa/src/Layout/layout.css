@@ -1,13 +1,13 @@
 main {
-    /* margin: auto 10%;
-    width: 80%; */
-    min-width: 380px;
+  flex: 1 0 auto;
+  margin: auto 10%;
+  width: 80%;
     border : 1px green solid;
   }
-  #layout{
-    border : 2px solid purple;
-    position:relative;
-    min-height: 100vh;
-    padding: 0 30px;
+
+  @media screen and (max-width: 1490px) {
+    main {
+      margin: auto 5%;
+      width: 90%;
+    }
   }
-  
