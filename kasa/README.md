@@ -1,7 +1,7 @@
 # Projet OpenClassRooms : Créez une application web de location immobilière avec React. 
 
 
-
+image.png
 
 
 Scénario : Kasa
