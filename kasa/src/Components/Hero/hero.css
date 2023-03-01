@@ -1,6 +1,5 @@
 #hero{
     width: 100%;
-    min-width: 360px;
     height: 223px;
     position: relative;
     margin-bottom: 20px;
@@ -10,7 +9,6 @@
 
 .heroImg{
     width: inherit;
-    min-width: 360px;
     height: inherit;
     object-fit: cover;
     background:  linear-gradient(transparent, rgba(0, 0, 0, 0.5));
