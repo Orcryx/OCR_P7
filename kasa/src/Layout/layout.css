@@ -2,15 +2,22 @@ main {
   margin: 10px 10%;
   padding-bottom: 5%;
   width: 80%;
+  flex-grow: 1;
   min-width: 320px;
   border : 1px green solid;
+  flex-grow: 1;
   }
-
+#layout{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: orange;
+  border : 1px blue solid; */
+}
   @media screen and (max-width: 1490px) {
     main {
       width: 90%;
       margin: 10px 5%;
-      padding-bottom: 15%;
     }
   }
 
