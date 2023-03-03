@@ -24,17 +24,15 @@
 @media screen and (max-width: 1490px) {
 
     #box404 {
-  
         padding: 10% 0;
       }
-      .message404{
-       
+    
+      .message404{ 
         font-size: 16px;
-
+        margin-bottom: 20%;
     }
     .linkToHome{
-        font-size: 14px;
-      
+        font-size: 14px;  
     }
 
   }
