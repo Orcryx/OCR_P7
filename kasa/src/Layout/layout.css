@@ -2,7 +2,8 @@ main {
   flex: 1 0 auto;
   margin: auto 10%;
   width: 80%;
-    border : 1px green solid;
+  min-width: 320px;
+  border : 1px green solid;
   }
 
   @media screen and (max-width: 1490px) {
@@ -11,3 +12,9 @@ main {
       width: 90%;
     }
   }
+
+  /* @media screen and (max-width: 1224px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 375px) {} */
