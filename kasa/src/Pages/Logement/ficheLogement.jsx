@@ -16,7 +16,6 @@ function Fiche(){
 
     const {lodgingId} = useParams();
     const testRoute = Lodging.some(resultat => resultat.id === lodgingId);
-    console.log( "1" + testRoute);
      if (testRoute){
           const lodging = Lodging.find(logement=> logement.id === lodgingId);
           const {title, location, rating, host, description, pictures} = lodging;
