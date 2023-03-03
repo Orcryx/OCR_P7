@@ -17,27 +17,26 @@
 
 .heroTitle{
     position: absolute;
-    width: 50%;
+    width: 60%;
     top : 40%;
     left : 25%;
     right : 25%;
     font-size: 40px;
     line-height: 100%;
     margin: 15px 20px;
-    box-sizing: inherit; 
-    color:  #FFFFFF;
 }
 
 @media screen and (max-width: 1224px) {
     .heroTitle{
-        font-size: 24px;
+        font-size: 30px;
     }
   }
   
   @media only screen and (max-width: 375px){
     .heroTitle{
         left : 0;
-        margin: 15px 10px;
+        width: 80%;
+        margin: 10px 10px;
         font-size: 18px;
     }
 

@@ -8,7 +8,7 @@ function heroBanner({image, title})
 return(
     <div id="hero">
         <img src={image} alt="bannier avec un paysage naturel" className="heroImg"/>
-        <h2 className="heroTitle policePrimary">{title}</h2>
+        <h2 className="heroTitle policePrimary white">{title}</h2>
     </div>
 );
 }
