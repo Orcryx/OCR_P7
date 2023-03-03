@@ -2,6 +2,9 @@
     padding: 1% 10% 0 10%; 
 }
 
+#aboutPage{
+    height: 100%;
+}
 @media screen and (max-width: 1490px) {
     .accordion{
         padding: 1% 0 0 0; 

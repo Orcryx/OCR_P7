@@ -1,6 +1,5 @@
 main {
-  flex: 1 0 auto;
-  margin: auto 10%;
+  margin: 10px 10%;
   width: 80%;
   min-width: 320px;
   border : 1px green solid;
@@ -8,7 +7,7 @@ main {
 
   @media screen and (max-width: 1490px) {
     main {
-      margin: auto 5%;
+      margin: 10% 5%;
       width: 90%;
     }
   }

@@ -1,16 +1,18 @@
 .accordionItem{
     margin-bottom: 2%;
     list-style-type: none;  
+    /* border: 1px saddlebrown solid; */
 }
 
 .accordionToggle{
     position: relative;
     width: 100%;
-    border-radius: 8px;
+    border-radius: 5px;
 } 
 
 .accordionTitle{
-   margin : 5px 10px;
+    font-size: 24px;
+   margin : 10px 10px;
    padding: 7px;
 }
 
@@ -20,10 +22,6 @@
     top: 5px;
     margin-left: 20px;
 }
-/* .up{}
-.down{
-
-} */
 
 .accordionContent{
     padding: 10px;
@@ -34,7 +32,15 @@
 @media screen and (max-width: 1490px) {
 
     .accordionItem{
+        margin-bottom: 30px;
+        list-style-type: none;  
+        border: 1px blue solid;
+    }
+
+    .accordionItem{
        max-width: 100% ;
     }
+
+    span{ background-color: blue;}
 }
   
