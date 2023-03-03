@@ -42,6 +42,8 @@
             margin: 10px 10px;
     }
 
-    .cardTitle{}
+    .cardTitle{
+        width: 90%;
+    }
 }
 
