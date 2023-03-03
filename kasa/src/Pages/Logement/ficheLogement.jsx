@@ -15,41 +15,36 @@ import "../../Utils/Style/fiche.css";
 function Fiche(){
 
     const {lodgingId} = useParams();
-    const lodging = Lodging.find(logement=> logement.id === lodgingId);
-    const {title, location, rating, host, description, pictures} = lodging;
-    const listEquipement = lodging.equipments.map((equipment, index) =>{return<p key={index} className="list">{equipment}</p>})
-   
-    return (
-     <>
-          {
-               lodging ? (
-                    <div className="oneLodging">
+    const testRoute = Lodging.some(resultat => resultat.id === lodgingId);
+    console.log( "1" + testRoute);
+     if (testRoute){
+          const lodging = Lodging.find(logement=> logement.id === lodgingId);
+          const {title, location, rating, host, description, pictures} = lodging;
+          const listEquipement = lodging.equipments.map((equipment, index) =>{return<p key={index} className="list">{equipment}</p>})
+          return (
+               <div className="oneLodging">
                          <SlideShow  images={pictures}/>
                          <div className="infoLodging">
                               <h1 className="titleLodging">{title}</h1>
-                              <p className="localisationLodging">{location}</p>
+                               <p className="localisationLodging">{location}</p>
                               <div className="infoOwerLodging">
                                    <Ower host={host}/>
                                    <Rate rates={rating}/>
-                              </div>
+                             </div>
                               <div className="tagLodging">
                                    {lodging.tags.map((tag, index) => (<TAG key={index} getTag={tag} />))}
-                              </div>
+                             </div>
                               <div className="collapseLodging">
                                    <div  className="box bigBox">
                                    <Collapse title="Description" description={description}/>
-                                   </div>
-                                   <div className="box smallBox">
-                                        <Collapse title="Équiments" description={listEquipement}/>
-                                   </div>
+                                  </div>
+                                  <div className="box smallBox">
+                                       <Collapse title="Équiments" description={listEquipement}/>
+                                  </div>
                               </div> 
                          </div>
-                    </div>
-               ) : <Navigate replace to="/404" />
-          }
-         
-     </>
-       
-      );
+                   </div>
+          );
+     }else return (<Navigate replace to="/404" />);
 }
 export default Fiche;
