@@ -32,10 +32,11 @@ header {
   }
   
   @media screen and (max-width: 1224px) {
+
     header {
-      margin: 40px 2.5%;
-      width: 95%;
-    }
+      margin: 40px 5%;
+      width: 90%;
+      }
 
     header > img {
       height: 47px;
