@@ -3,7 +3,7 @@ header {
   display: inline-flex;
   margin: 40px 10%;
   width: 80%;
-    border : 1px yellow solid;
+  border : 1px yellow solid;
   }
   
   header > img {
@@ -31,13 +31,14 @@ header {
     border-bottom: 1px solid #ff6060;
   }
   
-  @media screen and (max-width: 1224px) {
-
+  @media screen and (min-width: 375px) and (max-width: 1490px) {
     header {
       margin: 40px 5%;
       width: 90%;
       }
-
+  }
+  @media screen and (max-width: 1224px) {
+    
     header > img {
       height: 47px;
     }

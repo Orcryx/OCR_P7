@@ -8,7 +8,7 @@ import './layout.css';
 
 function Layout({children}) {
     return(
-        <div >
+        <div>
             <Banner />
             <main>{children}</main>
             <Footer />
