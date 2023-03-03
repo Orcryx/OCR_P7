@@ -1,10 +1,8 @@
 main {
   margin: 10px 10%;
-  padding-bottom: 5%;
   width: 80%;
   flex-grow: 1;
   min-width: 320px;
-  border : 1px green solid;
   flex-grow: 1;
   }
 #layout{
@@ -21,8 +19,10 @@ main {
     }
   }
 
-  /* @media screen and (max-width: 1224px) {}
+  @media screen and (max-width: 1224px) {}
 
+
+  /* 
 @media screen and (max-width: 768px) {}
 
 @media screen and (max-width: 375px) {} */
