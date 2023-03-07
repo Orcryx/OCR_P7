@@ -4,8 +4,8 @@
 ![ScreenshotOpenClassrooms](https://user-images.githubusercontent.com/108926881/222146693-0055e336-9f52-43b6-87bd-0dba328073ea.png)
 
 
-Scénario : Kasa
-maquette : [Maquette](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0) 
+Scénario : Kasa.\
+[Maquette](https://www.figma.com/file/bAnXDNqRKCRRP8mY2gcb5p/UI-Design-Kasa-FR?node-id=3%3A0). 
 
 
 ## Getting Started with Create React App
