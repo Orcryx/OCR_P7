@@ -1,6 +1,37 @@
 .accordionItem{
     margin-bottom: 2%;
     list-style-type: none;  
+    opacity: 0;
+    -webkit-animation: fonduHaut 1s linear forwards;
+    animation: fonduHaut 1s linear forwards;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+}
+
+  /*faire apparaitre et glisser les collapse avec effet de fondu au chargement de la page*/
+  @-webkit-keyframes fonduHaut {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+@keyframes fonduHaut {
+    0% {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0px);  
+    }
+  }
+
+.accordionItem:hover{
+    cursor: pointer; 
 }
 
 .accordionToggle{
@@ -11,21 +42,22 @@
 
 .accordionTitle{
     font-size: 24px;
-    margin : 10px 10px;
+    margin : 10px 10px -5px 10px;
     padding: 7px;
 }
 
 .accordionArrow{
     position: absolute;
     right : 15px;
-    top: 5px;
+    top: 10px;
     margin-left: 20px;
 }
 
 .accordionContent{
-    padding: 10px;
+    padding: 20px 10px 0 10px;
     min-height: 80px;
     border-radius: 3px;
+
 }
 
 @media screen and (max-width: 1490px) {

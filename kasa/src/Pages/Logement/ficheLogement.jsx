@@ -24,24 +24,27 @@ function Fiche(){
                <div className="oneLodging">
                          <SlideShow  images={pictures}/>
                          <div className="infoLodging">
-                              <h1 className="titleLodging">{title}</h1>
-                               <p className="localisationLodging">{location}</p>
-                              <div className="infoOwerLodging">
-                                   <Ower host={host}/>
-                                   <Rate rates={rating}/>
-                             </div>
-                              <div className="tagLodging">
-                                   {lodging.tags.map((tag, index) => (<TAG key={index} getTag={tag} />))}
-                             </div>
+                                   <div  className="descriptionLodging">
+                                        <h1 className="titleLodging">{title}</h1>
+                                        <p className="localisationLodging">{location}</p>
+                                        <div className="tagLodging">
+                                             {lodging.tags.map((tag, index) => (<TAG key={index} getTag={tag} />))}
+                                        </div>
+                                   </div>
+                                   <div className="infoOwerLodging">
+                                        <Ower host={host}/>
+                                        <Rate rates={rating}/>
+                                   </div>
+                         </div>
                               <div className="collapseLodging">
-                                   <div  className="box bigBox">
+                                   <div  className="box">
                                    <Collapse title="Description" description={description}/>
                                   </div>
-                                  <div className="box smallBox">
+                                  <div className="box">
                                        <Collapse title="Équiments" description={listEquipement}/>
                                   </div>
                               </div> 
-                         </div>
+                         
                    </div>
           );
      }else return (<Navigate replace to="/404" />);

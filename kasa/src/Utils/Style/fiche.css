@@ -1,13 +1,15 @@
 
 .oneLodging{
-    /* border: 1px salmon solid; */
     width: 100%;
     height: auto;  
 }
 
 .infoLodging{
-    position : relative;
-    /* border: 1px goldenrod solid; */
+    display: flex;
+}
+
+.descriptionLodging{
+    flex-grow: 1;
 }
 
 .titleLodging{
@@ -18,34 +20,46 @@
     margin-top: 5px;
 }
 
-.infoOwerLodging{
-    position : absolute;
-    top : 0px;
-    right: 0px; 
-}
-
 .tagLodging{
-    margin: 30px 0 20px 0;
-    /* border: 1px green solid; */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 5px;
+    margin: 5px 0 10px 0;  
 }
 
 .collapseLodging{
     display: flex;
     justify-content: space-between;
     gap: 3%;
-    /* border: 1px indigo solid; */
 }
 
 .collapseLodging.box{
     min-width: 580px;
 }
 
-.bigBox{
-width: 70%;
-
+.box{
+    width: 50%;
 }
 
-.smallBox{
-width: 30%;
+.list{
+    line-height: 5px;
+}
 
+@media screen and (max-width: 1768px) {
+
+    .collapseLodging{
+       flex-direction: column;
+       flex-grow: 1;
+    }
+    .box{
+        width: 100%;
+    }
+
+    .infoLodging{
+    
+     flex-direction: column;
+  
+    }
 }
