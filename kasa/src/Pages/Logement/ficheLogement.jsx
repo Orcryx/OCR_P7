@@ -35,7 +35,7 @@ function Fiche(){
                                         <Ower host={host}/>
                                         <Rate rates={rating}/>
                                    </div>
-                         </div>
+                              </div>
                               <div className="collapseLodging">
                                    <div  className="box">
                                    <Collapse title="Description" description={description}/>

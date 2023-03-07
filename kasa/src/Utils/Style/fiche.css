@@ -6,6 +6,7 @@
 
 .infoLodging{
     display: flex;
+    margin: 2% 0;
 }
 
 .descriptionLodging{
@@ -13,7 +14,8 @@
 }
 
 .titleLodging{
-    margin-bottom: 0px;
+    margin: 5px 0 0px 0;
+    
 }
 
 .localisationLodging{
@@ -29,6 +31,11 @@
     margin: 5px 0 10px 0;  
 }
 
+.infoOwerLodging{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 .collapseLodging{
     display: flex;
     justify-content: space-between;
@@ -47,7 +54,7 @@
     line-height: 5px;
 }
 
-@media screen and (max-width: 1768px) {
+@media screen and (max-width: 768px) {
 
     .collapseLodging{
        flex-direction: column;
@@ -58,8 +65,11 @@
     }
 
     .infoLodging{
-    
      flex-direction: column;
-  
+    }
+
+    .infoOwerLodging{
+    flex-direction: row-reverse;
+    justify-content: space-between;
     }
 }
