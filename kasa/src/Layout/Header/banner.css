@@ -3,7 +3,6 @@ header {
   display: inline-flex;
   margin: 40px 10%;
   width: 80%;
-    border : 1px yellow solid;
   }
   
   header > img {
@@ -11,13 +10,14 @@ header {
   }
   
   nav {
-    justify-content: flex-end;
     display: flex;
+    justify-content: flex-end;
+    gap: 8%;
     width: 100%;
+    margin-left: 30px;
   }
   
   .link {
-    margin: auto 25px;
     text-decoration: none;
     font-weight: 500;
     font-size: 24px;
@@ -31,12 +31,14 @@ header {
     border-bottom: 1px solid #ff6060;
   }
   
-  @media screen and (max-width: 1224px) {
+  @media screen and (min-width: 375px) and (max-width: 1490px) {
     header {
-      margin: 40px 2.5%;
-      width: 95%;
-    }
-
+      margin: 40px 5%;
+      width: 90%;
+      }
+  }
+  @media screen and (max-width: 1224px) {
+    
     header > img {
       height: 47px;
     }

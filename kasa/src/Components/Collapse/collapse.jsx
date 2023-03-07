@@ -12,7 +12,7 @@ function Collapse ({title, description}){
         <li className="accordionItem">
             <div className="accordionToggle backgroundPrimary" onClick={()=> setOpen(!isOpen)}>               
                 <span>   
-                <h3 className="accordionTitle white">{title}</h3>
+                <h3 className="accordionTitle policePrimary white">{title}</h3>
                     {isOpen ? <img src={arrowUp} alt="Fermer cette liste" className="accordionArrow"/> :  <img src={arrowDown} alt="Ouvrir cette liste" className="accordionArrow"/>}
                 </span>
             </div>

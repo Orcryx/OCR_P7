@@ -1,51 +1,75 @@
 
 .oneLodging{
-    /* border: 1px salmon solid; */
     width: 100%;
     height: auto;  
 }
 
 .infoLodging{
-    position : relative;
-    /* border: 1px goldenrod solid; */
+    display: flex;
+    margin: 2% 0;
+}
+
+.descriptionLodging{
+    flex-grow: 1;
 }
 
 .titleLodging{
-    margin-bottom: 0px;
+    margin: 5px 0 0px 0;
+    
 }
 
 .localisationLodging{
     margin-top: 5px;
 }
 
-.infoOwerLodging{
-    position : absolute;
-    top : 0px;
-    right: 0px; 
-}
-
 .tagLodging{
-    margin: 30px 0 20px 0;
-    /* border: 1px green solid; */
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    gap: 5px;
+    margin: 5px 0 10px 0;  
 }
 
+.infoOwerLodging{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 .collapseLodging{
     display: flex;
     justify-content: space-between;
     gap: 3%;
-    /* border: 1px indigo solid; */
 }
 
 .collapseLodging.box{
     min-width: 580px;
 }
 
-.bigBox{
-width: 70%;
-
+.box{
+    width: 50%;
 }
 
-.smallBox{
-width: 30%;
+.list{
+    line-height: 5px;
+}
 
+@media screen and (max-width: 768px) {
+
+    .collapseLodging{
+       flex-direction: column;
+       flex-grow: 1;
+    }
+    .box{
+        width: 100%;
+    }
+
+    .infoLodging{
+     flex-direction: column;
+    }
+
+    .infoOwerLodging{
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    }
 }

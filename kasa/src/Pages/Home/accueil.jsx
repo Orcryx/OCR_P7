@@ -15,7 +15,7 @@ function Accueil(){
  return(
     <div id="home">
         <HeroBanner image={image} title="Chez vous, partout et ailleurs"/>
-        <section className="thumbnails">
+        <section className="thumbnails backgroundSecondary">
             {Lodging.map((logement) => <NavLink key={logement.id} to={"/logement/"+logement.id}><Card key={logement.id} id={logement.id} image={logement.cover} title={logement.title} /></NavLink>)}
         </section>
     </div>
