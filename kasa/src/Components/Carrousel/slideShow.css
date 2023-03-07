@@ -25,5 +25,7 @@ width: 45px;
 height: 80px;
 margin: 0 10px;
 padding: 10px;
+cursor: pointer;
 /* background-color: rgba(0, 0, 0, 0.1); */
 }
+
