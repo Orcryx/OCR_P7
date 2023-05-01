@@ -27,7 +27,7 @@ The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
 ![image](https://user-images.githubusercontent.com/108926881/235458170-41bcaabf-b0b7-47d1-ad50-0acd6bb25fec.png)
-![image](https://user-images.githubusercontent.com/108926881/235458228-a27ba05c-f876-4e2b-97da-7f52679d4cfa.png)
-![image](https://user-images.githubusercontent.com/108926881/235458442-548002a8-b432-40de-8238-708904996a52.png)
+![image](https://user-images.githubusercontent.com/108926881/235458915-3e212d53-3af5-4f65-b9f5-7967eb1af1b0.png)
+
 
 ![image](https://user-images.githubusercontent.com/108926881/235458340-b63f7327-a81d-417c-a84f-cbc31f21f30d.png)
